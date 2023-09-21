@@ -14,6 +14,17 @@ function buscarAmigo(amigos, nombre) {
   //  buscarAmigo(amigos, 'toni') debe devolver { nombre: 'toni', edad: 33 };
 
   // Tu código aca:
+
+  let objeto
+
+  let nombreFiltrado = amigos.filter(function(amigo){
+    if(amigo.nombre === nombre){
+      objeto = {nombre: amigo.nombre, edad: amigo.edad}
+      return objeto
+    }
+  })
+
+  return objeto
   
 }
 
